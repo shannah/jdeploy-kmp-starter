@@ -1,4 +1,4 @@
-This is a Kotlin Multiplatform project targeting Desktop (JVM).
+This is a Kotlin Multiplatform project targeting Desktop (JVM), configured using jDeploy to build native desktop installers automatically with each commit and release.
 
 ![Image](https://github.com/user-attachments/assets/97153f2e-5f9c-49d9-8cb8-ef9349eae613)
 
