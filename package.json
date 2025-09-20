@@ -1,0 +1,37 @@
+{
+  "bin": {"jdeploy-kmp-starter": "jdeploy-bundle/jdeploy.js"},
+  "author": "",
+  "description": "KMP Starter",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "",
+  "version": "1.0.0",
+  "jdeploy": {
+    "jdk": false,
+    "javaVersion": "21",
+    "javafx": false,
+    "title": "KMP Starter",
+    "platformBundlesEnabled": true,
+    "packageMacX64": "jdeploy-kmp-starter-mac-x64",
+    "packageMacArm64": "jdeploy-kmp-starter-mac-arm64",
+    "packageWinX64": "jdeploy-kmp-starter-win-x64",
+    "packageLinuxX64": "jdeploy-kmp-starter-linux-x64",
+    "packageLinuxArm64": "jdeploy-kmp-starter-linux-arm64",
+    "jar": "composeApp/build/libs/jdeploy-kmp-starter-all.jar",
+    "buildCommand": [
+      "./gradlew",
+      ":composeApp:buildExecutableJar"
+    ]
+  },
+  "dependencies": {
+    "command-exists-promise": "^2.0.2",
+    "node-fetch": "2.6.7",
+    "tar": "^4.4.8",
+    "yauzl": "^2.10.0",
+    "shelljs": "^0.8.4"
+  },
+  "license": "ISC",
+  "name": "jdeploy-kmp-starter",
+  "files": ["jdeploy-bundle"],
+  "scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
+}
